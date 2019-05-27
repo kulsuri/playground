@@ -7,7 +7,7 @@ python web app for introductory docker project
 # Installation Instructions
 1. clone repo
 ```
-git clone https://github.com/kulsuri/playground/docker-intro
+git clone https://github.com/kulsuri/playground/tree/master/docker-intro
 ```
 2. build docker image
 ```
