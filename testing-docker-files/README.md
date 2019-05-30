@@ -51,3 +51,13 @@ TERM='xterm'
 appDir='/app'
 message='Welcome to our app!'
 ```
+- print the value of the appDir variable:
+```
+# echo $appDir
+/app
+```
+- print the value of the message variable:
+```
+# echo $message
+Welcome to our app!
+```
