@@ -52,3 +52,11 @@ drwxrwxrwt   2 root       root 4096 May 15 14:07 tmp
 drwxr-xr-x   1 root       root 4096 May 15 14:06 usr
 drwxr-xr-x   1 root       root 4096 May 15 14:07 var
 ```
+- to open the whoami.txt file, run:
+```
+docker run users-in-docker cat whoami.txt
+```
+- the contents of the whoami.txt file should print to the terminal:
+```
+silly_user
+```
