@@ -7,7 +7,7 @@ ENV appDir=/app message="Welcome to our app!"
 # Working directory
 WORKDIR $appDir
 
-# Commands to run to install dependencies: message variable will be written to README.txt
+# Commands to write message variable to README.txt
 RUN echo ${message} > README.txt
 
 # Command to run when the container starts
