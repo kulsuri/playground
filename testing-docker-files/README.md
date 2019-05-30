@@ -24,3 +24,30 @@ docker run testing-docker-files cat /app/README.txt
 ```
 Welcome to our app!
 ```
+
+# Running the App V2: see environment variables
+- run docker image with interactive shell with /bin/sh command - this will run the container and launch a shell
+```
+docker run -it testing-docker-files /bin/sh
+```
+- run the set command
+```
+# set
+```
+- we should now see the settings for the environment variables of the image:
+```
+HOME='/root'
+HOSTNAME='722575e4c902'
+IFS='
+'
+OPTIND='1'
+PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+PPID='0'
+PS1='# '
+PS2='> '
+PS4='+ '
+PWD='/app'
+TERM='xterm'
+appDir='/app'
+message='Welcome to our app!'
+```

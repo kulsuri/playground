@@ -7,6 +7,9 @@ docker run -p 8080:8080 [image-name]
 e.g. docker run -p 8080:8080 sample-python-web-app
 the -p exposes the container port to a real port
 
+run docker image with interactive terminal session
+docker run -it [image-name]
+
 see running containers
 docker ps
 
