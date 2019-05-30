@@ -30,7 +30,7 @@ Welcome to our app!
 ```
 docker run -it testing-docker-files /bin/sh
 ```
-- run the set command
+- run the set command in the interactive shell
 ```
 # set
 ```
