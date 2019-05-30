@@ -12,4 +12,3 @@ RUN echo ${message} > README.txt
 
 # Command to run when the container starts
 CMD echo Read ${appDir}/README.txt for a friendly greeting!
-
