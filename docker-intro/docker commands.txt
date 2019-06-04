@@ -22,3 +22,10 @@ docker network ls
 
 inspect which containers are running on the docker bridge network
 docker network inspect bridge
+
+remove docker image
+docker rmi [image-name]
+e.g. docker rmi sample-python-web-app
+
+remove the unused containers, networks, images, volumes, images, as well as override the confirmation prompt:
+docker system prune --all --force --volumes
