@@ -15,3 +15,10 @@ git clone https://github.com/kulsuri/playground/tree/master/algorithms
 ```
 python merge_sort.py
 ```
+
+# Searching Algorithms
+
+## Linear Search
+- Find an item in an UNORDERED list
+- Start at the beginning of the list and continue searching until the end of the list is reached or the item is found
+- O(n)
