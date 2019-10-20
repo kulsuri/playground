@@ -22,3 +22,8 @@ python merge_sort.py
 - Find an item in an UNORDERED list
 - Start at the beginning of the list and continue searching until the end of the list is reached or the item is found
 - O(n)
+
+## Binary search
+- Find an item in an ORDERED list
+- Break the list in half. If the item you are searching for is above or below the middle then break that half of the list in half again. Continue this until the item is found.
+- O( log(n) )
