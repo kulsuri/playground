@@ -32,3 +32,4 @@ python test.py
 
 # Big O Time Complexity
 ![Image of Time Complexity Graphs](https://github.com/kulsuri/playground/blob/master/algorithms/img/big-o-running-time-complexity.png)
+![img](img/big-o-running-time-complexity.png)
