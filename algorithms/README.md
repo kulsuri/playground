@@ -31,4 +31,4 @@ python test.py
 # Sorting Algorithms
 
 # Big O Time Complexity
-![Image of Time Complexity Graphs](img\big-o-running-time-complexity.png)
+![Image of Time Complexity Graphs](https://github.com/kulsuri/playground/blob/master/algorithms/img/big-o-running-time-complexity.png)
