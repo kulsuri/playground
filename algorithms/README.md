@@ -35,8 +35,8 @@ python test.py
 - Once two halves are sorted, a merge is performed – taking two smaller sorted lists and combining them together into a single, sorted, new list.
 - O(n log n)
 
-<!-- ![Image illustrating merge sort 1](img/mergesort1.png)
-![Image illustrating merge sort 2](img/mergesort2.png) -->
+![Image illustrating merge sort 1](img/mergesort1.png)
+![Image illustrating merge sort 2](img/mergesort2.png)
 
 # Big O Time Complexity
 ![Image of Time Complexity Graphs](img/big-o-running-time-complexity.png)
