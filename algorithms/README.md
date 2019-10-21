@@ -30,6 +30,14 @@ python test.py
 
 # Sorting Algorithms
 
+## Merge Sort
+- Split the list in half and recursively invokes a merge sort on both halves.
+- Once two halves are sorted, a merge is performed – taking two smaller sorted lists and combining them together into a single, sorted, new list.
+- O(n log n)
+
+<!-- ![Image illustrating merge sort 1](img/mergesort1.png)
+![Image illustrating merge sort 2](img/mergesort2.png) -->
+
 # Big O Time Complexity
 ![Image of Time Complexity Graphs](img/big-o-running-time-complexity.png)
 
@@ -37,4 +45,4 @@ Algorithm | Average Time Complexity |
 --- | --- |
 `linear search` | *O(n)* |
 `binary search` | *O(log n)* |
- `merge sort` | *O(n log n)* |
+`merge sort` | *O(n log n)* |
