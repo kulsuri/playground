@@ -23,5 +23,25 @@ class algorithms_test_case(unittest.TestCase):
         # run the test
         self.assertEqual( result, 104 )
 
+    def test_split_list_merge_sort(self):
+
+        # data
+        input_list_1 = [1, 2, 3] # [1, 2, 3]}, ([1], [2, 3])),
+        input_list_2 = [1, 2, 3, 4]
+        input_list_3 = [1]
+        input_list_4 = [1, 2, 3, 4, 5, 6, 7]
+
+        # results
+        result1 = sorting_functions.merge_sort_split_list( input_list_1 )
+        result2 = sorting_functions.merge_sort_split_list( input_list_2 )
+        result3 = sorting_functions.merge_sort_split_list( input_list_3 )
+        result4 = sorting_functions.merge_sort_split_list( input_list_4 )
+
+        # test
+        self.assertEqual( result1 , ([1], [2, 3]) )
+        self.assertEqual( result2 , ([1, 2], [3, 4]) )
+        self.assertEqual( result3 , ([], [1]) )
+        self.assertEqual( result4 , ([1, 2, 3], [4, 5, 6, 7]) )
+
 if __name__ == '__main__':
     unittest.main()
