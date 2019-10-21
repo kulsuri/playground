@@ -31,5 +31,10 @@ python test.py
 # Sorting Algorithms
 
 # Big O Time Complexity
-![Image of Time Complexity Graphs](https://github.com/kulsuri/playground/blob/master/algorithms/img/big-o-running-time-complexity.png)
-![img](img/big-o-running-time-complexity.png)
+![Image of Time Complexity Graphs](img/big-o-running-time-complexity.png)
+
+Algorithm | Average Time Complexity |
+--- | --- |
+`linear search` | *O(n)* |
+`binary search` | *O(log n)* |
+ `merge sort` | *O(n log n)* |
