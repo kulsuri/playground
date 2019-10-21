@@ -1,6 +1,3 @@
-# ordered list of elements
-ordered_list = [3, 5, 7, 9, 13, 22, 56, 78, 97, 104, 106, 222, 363, 651]
-
 # binary search function
 def binary_search(list_to_search, element_to_find, starting_position = 0, closing_postion = None):
 
@@ -26,16 +23,3 @@ def binary_search(list_to_search, element_to_find, starting_position = 0, closin
     # if the element to find is larger than the middle position, then the starting position now becomes the middle position
     else:
         return binary_search(list_to_search, element_to_find, mid_position + 1, closing_postion)
-
-
-# call the binary search function, searching for the element 104
-a = binary_search(ordered_list, 104)
-print("element", a, "found at index position", ordered_list.index(a))
-    
-
-
-    
-
-
-
-
