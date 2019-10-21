@@ -37,6 +37,7 @@ python test.py
 
 ![Image illustrating merge sort 1](img/mergesort1.png)
 ![Image illustrating merge sort 2](img/mergesort2.png)
+![Gif illustrating merge sort](img/mergesortgif.gif)
 
 # Big O Time Complexity
 ![Image of Time Complexity Graphs](img/big-o-running-time-complexity.png)

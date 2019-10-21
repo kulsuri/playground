@@ -1,4 +1,5 @@
 import searching_functions
+import sorting_functions
 import unittest
 
 # test the linear search function, searching for the element 1
