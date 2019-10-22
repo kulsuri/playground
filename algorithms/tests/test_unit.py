@@ -1,10 +1,15 @@
+import sys
+from os import path
+sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+
+
 import searching_functions
 import sorting_functions
 import unittest
 
-# test the linear search function, searching for the element 1
 class algorithms_test_case(unittest.TestCase):
 
+    # test the linear search function, searching for the element 1
     def test_linear_search(self):
 
         # unordered list of elements / DATA
@@ -23,7 +28,7 @@ class algorithms_test_case(unittest.TestCase):
         # run the test
         self.assertEqual( result, 104 )
 
-    def test_split_list_merge_sort(self):
+    def test_merge_sort_split_list(self):
 
         # data
         input_list_1 = [1, 2, 3]
@@ -57,34 +62,13 @@ class algorithms_test_case(unittest.TestCase):
         self.assertEqual ( result1 , [1, 3, 4, 5] )
         self.assertEqual ( result2 , [1, 2, 3] )
 
-    def test_merge_sort(self):
-
+    def test_bad_data_type(self):
         # data
-        input_list1 = [1, 2] # [1, 2]
-        input_list2 = [2, 1] # [1, 2]
-        input_list3 = [] # []
-        input_list4 = [1] # [1]
-        input_list5 = [5, 1, 1] # [1, 1, 5]
-        input_list6 = [9, 1, 10, 2] # [1, 2, 9, 10]
-        input_list7 = range(10)[::-1] #list(range(10))
-
-        # results
-        result1 = sorting_functions.merge_sort( input_list1 )
-        result2 = sorting_functions.merge_sort( input_list2 )
-        result3 = sorting_functions.merge_sort( input_list3 )
-        result4 = sorting_functions.merge_sort( input_list4 )
-        result5 = sorting_functions.merge_sort( input_list5 )
-        result6 = sorting_functions.merge_sort( input_list6 )
-        result7 = sorting_functions.merge_sort( input_list7 )
-        
+        data1 = 'banana'
+        data2 = [1, 2, 3]
         # test
-        self.assertEqual ( result1 , [1, 2] )
-        self.assertEqual ( result2 , [1, 2] )
-        self.assertEqual ( result3 , [] )
-        self.assertEqual ( result4 , [1] )
-        self.assertEqual ( result5 , [1, 1, 5] )
-        self.assertEqual ( result6 , [1, 2, 9, 10] )
-        self.assertEqual ( result7 , list(range(10)) )
+        with self.assertRaises(TypeError):
+            sorting_functions.merge_sort_merge_sorted_list( data1, data2 )
 
 if __name__ == '__main__':
     unittest.main()
