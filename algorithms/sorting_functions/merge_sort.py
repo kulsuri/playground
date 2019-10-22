@@ -1,3 +1,4 @@
+# https://medium.com/@amirziai/merge-sort-walkthrough-with-code-in-python-e4f76d90a4ea
 # step 1: given a list, split the list down the middle
 def merge_sort_split_list(list_to_sort):
 
