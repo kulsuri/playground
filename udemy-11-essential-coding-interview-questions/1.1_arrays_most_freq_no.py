@@ -18,7 +18,7 @@ def most_frequent(given_array):
             result = i
             max_count = Hash[i]
 
-    return print(result)
+    return result
 
 
 # Examples
@@ -34,4 +34,4 @@ list4 = [0]
 # most_frequent(list5) should return -1
 list5 = [0, -1, 10, 10, -1, 10, -1, -1, -1, 1]
 
-most_frequent(list1)
+print(most_frequent(list1))

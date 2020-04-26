@@ -20,7 +20,7 @@ def common_elements(list1, list2):
         if Hash[i] == 2:
             result.append(i)
             
-    return print(result)
+    return result
 
 # method 2
 def common_elements2(list1, list2):
@@ -40,7 +40,7 @@ def common_elements2(list1, list2):
         else:
             p1 += 1
 
-    return print(result)
+    return result
 
 # NOTE: The following input values will be used for testing your solution.
 list_a1 = [1, 3, 4, 6, 7, 9]
@@ -55,4 +55,4 @@ list_c1 = [0, 1, 2, 3, 4, 5]
 list_c2 = [6, 7, 8, 9, 10, 11]
 # common_elements(list_b1, list_b2) should return [] (an empty list).
 
-common_elements2(list_c1, list_c2)
+print(common_elements2(list_c1, list_c2))
