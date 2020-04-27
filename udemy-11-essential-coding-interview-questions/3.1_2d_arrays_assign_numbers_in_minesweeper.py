@@ -16,7 +16,7 @@ def mine_sweeper(bombs, num_rows, num_cols):
 
         field[row][col] = -1
 
-    # update bomb 8 surrounding positions
+        # update bomb 8 surrounding positions
         
         p1 = [row-1, col-1]    # top left 
         p2 = [row-1, col]      # above 
