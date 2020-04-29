@@ -1,3 +1,5 @@
+# implement a function that determines if a tree is a binary search tree
+
 # Use this class to create binary trees.
 class Node:
     def __init__(self, value, left=None, right=None):

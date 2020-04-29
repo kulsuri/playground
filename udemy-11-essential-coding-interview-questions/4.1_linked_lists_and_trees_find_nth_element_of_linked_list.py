@@ -1,3 +1,5 @@
+# return the nth element of a linked list
+
 # Use this class to create linked lists.
 class Node:
     def __init__(self, value, child=None):
