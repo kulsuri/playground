@@ -33,7 +33,24 @@ def nth_from_last(head, n):
         return None
     else:     
         return node_list[-n]
-        
+
+# answer 
+def nth_from_last_2(head, n):
+
+    left = head
+    right = head
+
+    for i in range(n):
+        if right == None:
+            return None
+        else:
+            right = right.child
+    while right != None:
+        right = right.child
+        left = left.child
+    
+    return left
+
 
 # NOTE: Feel free to use the following function for testing.
 # It converts the given linked list into an easy-to-read string format.
@@ -69,9 +86,16 @@ head2 = current2
 # nth_from_last(head2, 5) should return None.
 # nth_from_last(None, 1) should return None.
 
-print(nth_from_last(current,1))
-print(nth_from_last(head, 5))
-print(nth_from_last(head2, 2))
-print(nth_from_last(head2, 4))
-print(nth_from_last(head2, 5))
-print(nth_from_last(None, 1))
+# print(nth_from_last(current,1))
+# print(nth_from_last(head, 5))
+# print(nth_from_last(head2, 2))
+# print(nth_from_last(head2, 4))
+# print(nth_from_last(head2, 5))
+# print(nth_from_last(None, 1))
+
+print(nth_from_last_2(current,1))
+print(nth_from_last_2(head, 5))
+print(nth_from_last_2(head2, 2))
+print(nth_from_last_2(head2, 4))
+print(nth_from_last_2(head2, 5))
+print(nth_from_last_2(None, 1))
