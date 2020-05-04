@@ -60,3 +60,7 @@ def challenge2(nums):
 
 print(challenge2([3,4,-1,1]))
 print(challenge2([1,2,0]))
+print(challenge2([1, 2, 5]))
+print(challenge2([1]))
+print(challenge2([-1, -2]))
+print(challenge2([]))
