@@ -26,6 +26,10 @@ def challenge(nums):
 
 def challenge2(nums):
 
+    if len(nums) == 0:
+        answer = 1
+        return answer
+
     Hash = {}
     smallest_num = nums[0]
     largest_num = nums[0]
@@ -48,12 +52,16 @@ def challenge2(nums):
         else:
             answer = j
             if answer == 0:
+                answer = None
                 pass
             else:
                 break
     
     if answer == None:
         answer = nums_corrected[-1]+1
+
+        while answer == 0:
+            answer += 1
 
     return answer #Hash, answer
     
@@ -64,3 +72,5 @@ print(challenge2([1, 2, 5]))
 print(challenge2([1]))
 print(challenge2([-1, -2]))
 print(challenge2([]))
+print(challenge2([-1, -2, 1]))
+
