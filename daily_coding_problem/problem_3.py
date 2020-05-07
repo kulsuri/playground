@@ -16,7 +16,7 @@ def serialize(root):
         return None
 
     
-
+# initialize nodes
 node_a = Node('a')
 node_b = Node('b')
 node_c = Node('c')
@@ -25,5 +25,20 @@ node_e = Node('e')
 node_f = Node('f')
 node_g = Node('g')
 
+# initialize tree
+node_a.left = node_b
+node_a.right = node_c
+node_b.left = node_d
+node_b.right = node_e
+node_c.left = node_f
+node_c.right = node_g
+
+""" 
+     a
+   /  \
+  b    c
+ /\    /\
+d  e  f  g
+""" 
 
 print(node_a.val)

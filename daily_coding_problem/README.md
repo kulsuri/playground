@@ -72,6 +72,9 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'`
 ```
 
+---
+
+
 ### Problem 4
 
 This problem was asked by Stripe.
