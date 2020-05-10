@@ -21,8 +21,9 @@ No | Difficulty | File | Type
 4 | Hard | [problem_4.py](problem_4.py) | array
 5 | Medium | [problem_5.py](problem_5.py) | functions
 6 | Hard | [problem_6.py](problem_6.py) | linked list
-7 | Medium | [problem_7.py](problem_7.py) | 
+7 | Medium | [problem_7.py](problem_7.py) | strings
 8 | Easy | [problem_8.py](problem_8.py) | trees
+9 | Hard | [problem_9.py](problem_9.py) | arrays
 
 ---
 
@@ -141,7 +142,8 @@ num_ways("") = 1
 ```
 
 ```
-num_ways("12345") = "a" + decode("2345) OR "l" + decode("345")
+num_ways("12345") = "a" + decode("2345) 
+                    OR "l" + decode("345")
                     = num_ways("2345") + num_ways("345")
 ```
 
@@ -176,8 +178,17 @@ For example, the following tree has 5 unival subtrees:
  1   1
 ```
 
+---
 
+### Problem 9
 
+This problem was asked by Airbnb.
 
+Given a list of integers, write a function that returns the largest sum of non-adjacent numbers. Numbers can be 0 or negative.
 
+For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5. [5, 1, 1, 5] should return 10, since we pick 5 and 5.
+
+Follow-up: Can you do this in O(N) time and constant space?
+
+---
 
