@@ -4,37 +4,30 @@
 # For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
 # You can modify the input array in-place.
 
-def challenge(nums):
-
-    nums_sorted = sorted(nums)
-    prev_num = nums_sorted[0]
-    answer = None
-
-    for c,v in enumerate(nums_sorted[1:]):
-
-        if v == prev_num + 1:
-            prev_num = v
+# get positive integer subset
+def get_positive_subset(nums):
+    positive_nums = []
+    for i in nums:
+        if i <= 0:
             pass
         else:
-            answer = v+1
-            break
+            positive_nums.append(i)
+    return positive_nums
 
-    if answer == None:
-        answer = nums_sorted[-1] + 1
+def challenge(nums):
 
-    return answer
-
-def challenge2(nums):
-
+    nums = get_positive_subset(nums)
+    # if empty list then return lowest positive integer = 1
     if len(nums) == 0:
         answer = 1
         return answer
 
-    Hash = {}
-    smallest_num = nums[0]
-    largest_num = nums[0]
-    answer = None 
+    Hash = {} # empty dict
+    smallest_num = nums[0] # store smallest int
+    largest_num = nums[0] # store largest int
+    answer = None # store answer for first missing positive integer
 
+    # loop through list, store value in dictionary and determine smallest and largest integer
     for i in nums:
         Hash[i] = 1
 
@@ -43,34 +36,37 @@ def challenge2(nums):
         
         if i > largest_num:
             largest_num = i
-            
+    
+    # create new correct and complate list based on smallest_num and largest_num
     nums_corrected = list(range(smallest_num, largest_num+1))
 
+    # compare initial list nums with correct list nums_corrected
     for j in nums_corrected:
-        if j in Hash.keys():
+        if j in Hash.keys(): # check if element is in dictionary
             pass
         else:
-            answer = j
-            if answer == 0:
-                answer = None
+            answer = j # if number is not in dictionary then answer = j
+            if answer == 0: # check if answer does not equal zero
+                answer = None # reset answer back to zero and continue loop
                 pass
-            else:
+            else: # otherwise answer has been found and break
                 break
     
-    if answer == None:
-        answer = nums_corrected[-1]+1
+    if answer == None: # if answer is None that means that nums was not missing an element in the middle 
+        answer = nums_corrected[-1]+1 # so missing element is at the end
 
-        while answer == 0:
+        while answer == 0: # answer cannot be zero
             answer += 1
 
-    return answer #Hash, answer
+    return answer
     
 
-print(challenge2([3,4,-1,1]))
-print(challenge2([1,2,0]))
-print(challenge2([1, 2, 5]))
-print(challenge2([1]))
-print(challenge2([-1, -2]))
-print(challenge2([]))
-print(challenge2([-1, -2, 1]))
+print(challenge([3,4,-1,1]))
+print(challenge([1,2,0]))
+print(challenge([1, 2, 5]))
+print(challenge([1]))
+print(challenge([-1, -2]))
+print(challenge([]))
+print(challenge([-1, -2, 1]))
+print(challenge([-2, -3, -5, -4]))
 
