@@ -15,15 +15,15 @@ git clone https://github.com/kulsuri/playground/tree/master/daily-coding-problem
 
 No | Difficulty | File | Type
 --- | --- | --- | ---
-1 | Easy | [problem_1.py](problem_1.py) | array
-2 | Hard | [problem_2.py](problem_2.py) | array
-3 | Medium | [problem_3.py](problem_3.py) | tree
-4 | Hard | [problem_4.py](problem_4.py) | array
-5 | Medium | [problem_5.py](problem_5.py) | functions
-6 | Hard | [problem_6.py](problem_6.py) | linked list
-7 | Medium | [problem_7.py](problem_7.py) | strings
-8 | Easy | [problem_8.py](problem_8.py) | trees
-9 | Hard | [problem_9.py](problem_9.py) | arrays
+1 | Easy | [problem_1.py](solutions/problem_1.py) | array
+2 | Hard | [problem_2.py](solutions/problem_2.py) | array
+3 | Medium | [problem_3.py](solutions/problem_3.py) | tree
+4 | Hard | [problem_4.py](solutions/problem_4.py) | array
+5 | Medium | [problem_5.py](solutions/problem_5.py) | functions
+6 | Hard | [problem_6.py](solutions/problem_6.py) | linked list
+7 | Medium | [problem_7.py](solutions/problem_7.py) | strings
+8 | Easy | [problem_8.py](solutions/problem_8.py) | trees
+9 | Hard | [problem_9.py](solutions/problem_9.py) | arrays
 
 ---
 
