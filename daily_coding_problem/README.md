@@ -132,19 +132,27 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 
 Examples:
 
+```
 num_ways("3") = 1
+```
 
+```
 num_ways("") = 1
+```
 
+```
 num_ways("12345") = "a" + decode("2345) OR "l" + decode("345")
-
                     = num_ways("2345") + num_ways("345")
+```
 
+```
 num_ways("27345") = "b" + decode("7345")
-
                     = num_ways("7345")
-                    
+```
+
+```
 num_ways("011") = 0
+```
 
 ---
 
