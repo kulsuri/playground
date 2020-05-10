@@ -24,7 +24,7 @@ No | Difficulty | File | Type
 7 | Medium | [problem_7.py](solutions/problem_7.py) | strings
 8 | Easy | [problem_8.py](solutions/problem_8.py) | trees
 9 | Hard | [problem_9.py](solutions/problem_9.py) | arrays
-
+10 | Medium | [problem_10.py](solutions/problem_10.py) | functions
 ---
 
 ### Problem 1
@@ -192,3 +192,12 @@ Follow-up: Can you do this in O(N) time and constant space?
 
 ---
 
+---
+
+### Problem 10
+
+This problem was asked by Apple.
+
+Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+---
