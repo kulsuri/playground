@@ -4,50 +4,21 @@
 
 def largest_sum(l):
 
-    previous = 0 # 
-    total = 0
-
-    for i in l:
-        
-        previous, total = total, max(total, previous + i)
-
-    return total
-
-def largest_sum2(l):
-
-    # loop through all elements in l
-    # maintain two sums
-    # prev_element_inc = max sum including the previous element
-    # prev_element_exc = max sum excluding the previous element
-    
-    # max sum excluding the current element = max(prev_element_inc, prev_element_exc)
-    # max sum including the current element = prev_element_exc + current element
-
-    inc = 0
-    exc = 0
+    inclusive = 0
+    exclusive = 0
 
     for i in l:
 
-        # current max excluding i
-        if exc > inc:
-            new_exc = exc
-        else:
-            new_exc = inc
+        temp = inclusive
 
-        
-        # current max including i
-        inc = exc + i
-        exc = new_exc
+        inclusive = max(inclusive, exclusive + i)
 
-    
-    if exc > inc:
-        return exc
-    else:
-        return inc
+        exclusive = temp
+
+    answer = max(inclusive, exclusive)
+
+    return answer
         
 print(largest_sum([2, 4, 6, 2, 5]))
 print(largest_sum([5, 1, 1, 20, 2]))
-
-print(largest_sum2([2, 4, 6, 2, 5]))
-print(largest_sum2([5, 1, 1, 20, 2]))
-print(largest_sum2([5, 1, 1, 5]))
+print(largest_sum([5, 1, 1, 5]))
