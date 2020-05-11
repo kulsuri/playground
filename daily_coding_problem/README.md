@@ -13,6 +13,10 @@ git clone https://github.com/kulsuri/playground/tree/master/daily-coding-problem
 
 # Problems
 
+---
+
+### Summary
+
 No | Difficulty | File | Type
 --- | --- | --- | ---
 1 | Easy | [problem_1.py](solutions/problem_1.py) | array
@@ -25,6 +29,8 @@ No | Difficulty | File | Type
 8 | Easy | [problem_8.py](solutions/problem_8.py) | trees
 9 | Hard | [problem_9.py](solutions/problem_9.py) | arrays
 10 | Medium | [problem_10.py](solutions/problem_10.py) | functions
+11 | Medium | [problem_11.py](solutions/problem_11.py) | hash
+
 ---
 
 ### Problem 1
@@ -199,5 +205,17 @@ Follow-up: Can you do this in O(N) time and constant space?
 This problem was asked by Apple.
 
 Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+---
+
+### Problem 11
+
+This problem was asked by Twitter.
+
+Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have s as a prefix.
+
+For example, given the query string de and the set of strings [dog, deer, deal], return [deer, deal].
+
+Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 
 ---
