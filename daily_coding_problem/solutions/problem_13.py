@@ -4,41 +4,34 @@
 
 
 def longest_substring(k, s):
+    
+    Hash2 = dict()
 
-    # distinct_char_count = k
-
-    stack = []
-    Hash = dict()
-    count = 0
-
-    for y in range(len(s)):
+    for y,v in enumerate(s):
 
         distinct_char_count = k
 
         for i in s[y:]:
 
-            if count not in Hash:
-                Hash[count] = [i]
+            if y not in Hash2:
+
+                Hash2[y] = [i]
                 distinct_char_count = distinct_char_count - 1
             
-            elif i in Hash[count]:
+            elif i in Hash2[y]:
 
-                Hash[count].append(i)
-                #stack.append(i)
+                Hash2[y].append(i)
 
             elif distinct_char_count > 0:
 
                 distinct_char_count = distinct_char_count - 1
-
-                Hash[count].append(i)
-                #stack.append(i)
+                Hash2[y].append(i)
             
             else:
                 
-                count += 1
                 break
 
-    return Hash
+    return Hash2
 
 
 print(longest_substring(2, "abcba"))
