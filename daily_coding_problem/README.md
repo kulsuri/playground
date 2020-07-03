@@ -35,6 +35,8 @@ No | Difficulty | File | Type
 14 | Hard | [problem_14.py](solutions/problem_12.py) | tbc
 15 | Hard | [problem_15.py](solutions/problem_12.py) | tbc
 16 | Hard | [problem_16.py](solutions/problem_12.py) | tbc
+ | | | 
+65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
 
 ---
 
@@ -252,3 +254,20 @@ Given an integer k and a string s, find the length of the longest substring that
 For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
 
 ---
+
+---
+
+### Problem 65
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Amazon.
+
+Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.
+
+For example, given the following matrix:
+
+[[1,  2,  3,  4,  5],
+ [6,  7,  8,  9,  10],
+ [11, 12, 13, 14, 15],
+ [16, 17, 18, 19, 20]]

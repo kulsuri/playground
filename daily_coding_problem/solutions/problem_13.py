@@ -4,7 +4,7 @@
 
 
 def longest_substring(k, s):
-    
+
     Hash2 = dict()
 
     for y,v in enumerate(s):
@@ -31,7 +31,12 @@ def longest_substring(k, s):
                 
                 break
 
-    return Hash2
+    ans = Hash2[0]
+    for i in Hash2:
 
+        if len(Hash2[i]) > len(ans):
+            ans = Hash2[i]   
+        
+    return ans
 
 print(longest_substring(2, "abcba"))
