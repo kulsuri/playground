@@ -257,8 +257,6 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 
 ### Problem 65
 
-Good morning! Here's your coding interview problem for today.
-
 This problem was asked by Amazon.
 
 Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.
