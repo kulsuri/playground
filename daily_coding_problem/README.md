@@ -36,7 +36,9 @@ No | Difficulty | File | Type
 15 | Hard | [problem_15.py](solutions/problem_12.py) | tbc
 16 | Hard | [problem_16.py](solutions/problem_12.py) | tbc
  | | | 
+63 | Easy | [problem_63.py](solutions/problem_63.py) | matrix
 65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
+66 | Medium | [problem_66.py](solutions/problem_66.py) | probability
 
 ---
 
@@ -254,6 +256,26 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 ---
 
 ---
+### Problem 63
+
+This problem was asked by Microsoft.
+
+Given a 2D matrix of characters and a target word, write a function that returns whether the word can be found in the matrix by going left-to-right, or up-to-down.
+
+For example, given the following matrix:
+
+```
+[
+    ['F', 'A', 'C', 'I'],
+    ['O', 'B', 'Q', 'P'],
+    ['A', 'N', 'O', 'B'],
+    ['M', 'A', 'S', 'S']
+]
+ ```
+
+and the target word 'FOAM', you should return true, since it's the leftmost column. Similarly, given the target word 'MASS', you should return true, since it's the last row.
+
+---
 
 ### Problem 65
 
@@ -296,3 +318,13 @@ You should print out the following:
 13
 12
 ```
+
+---
+
+### Problem 66
+
+Assume you have access to a function toss_biased() which returns 0 or 1 with a probability that's not 50-50 (but also not 0-100 or 100-0). You do not know the bias of the coin.
+
+Write a function to simulate an unbiased coin toss.
+
+---
