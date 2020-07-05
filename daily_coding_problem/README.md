@@ -36,6 +36,7 @@ No | Difficulty | File | Type
 15 | Hard | [problem_15.py](solutions/problem_12.py) | tbc
 16 | Hard | [problem_16.py](solutions/problem_12.py) | tbc
  | | | 
+55 | Easy | [problem_55.py](solutions/problem_55.py) | url shortener 
 58 | Medium | [problem_58.py](solutions/problem_58.py) | lists 
 63 | Easy | [problem_63.py](solutions/problem_63.py) | matrix
 65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
@@ -255,6 +256,18 @@ Given an integer k and a string s, find the length of the longest substring that
 For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
 
 ---
+
+---
+
+### Problem 55
+
+This problem was asked by Microsoft.
+
+Implement a URL shortener with the following methods:
+
+shorten(url), which shortens the url into a six-character alphanumeric string, such as zLg6wl.
+restore(short), which expands the shortened string into the original url. If no such shortened string exists, return null.
+Hint: What if we enter the same URL twice?
 
 ---
 
