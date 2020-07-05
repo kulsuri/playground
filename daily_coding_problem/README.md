@@ -36,6 +36,7 @@ No | Difficulty | File | Type
 15 | Hard | [problem_15.py](solutions/problem_12.py) | tbc
 16 | Hard | [problem_16.py](solutions/problem_12.py) | tbc
  | | | 
+58 | Medium | [problem_58.py](solutions/problem_58.py) | lists 
 63 | Easy | [problem_63.py](solutions/problem_63.py) | matrix
 65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
 66 | Medium | [problem_66.py](solutions/problem_66.py) | probability
@@ -256,6 +257,21 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 ---
 
 ---
+
+### Problem 58
+
+This problem was asked by Amazon.
+
+An sorted array of integers was rotated an unknown number of times.
+
+Given such an array, find the index of the element in the array in faster than linear time. If the element doesn't exist in the array, return null.
+
+For example, given the array [13, 18, 25, 2, 8, 10] and the element 8, return 4 (the index of 8 in the array).
+
+You can assume all the integers in the array are unique.
+
+---
+
 ### Problem 63
 
 This problem was asked by Microsoft.
