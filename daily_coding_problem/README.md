@@ -19,10 +19,10 @@ git clone https://github.com/kulsuri/playground/tree/master/daily-coding-problem
 
 No | Difficulty | File | Type
 --- | --- | --- | ---
-1 | Easy | [problem_1.py](solutions/problem_1.py) | array
-2 | Hard | [problem_2.py](solutions/problem_2.py) | array
+1 | Easy | [problem_1.py](solutions/problem_1.py) | arrays
+2 | Hard | [problem_2.py](solutions/problem_2.py) | arrays
 3 | Medium | [problem_3.py](solutions/problem_3.py) | tree
-4 | Hard | [problem_4.py](solutions/problem_4.py) | array
+4 | Hard | [problem_4.py](solutions/problem_4.py) | arrays
 5 | Medium | [problem_5.py](solutions/problem_5.py) | functions
 6 | Hard | [problem_6.py](solutions/problem_6.py) | linked list
 7 | Medium | [problem_7.py](solutions/problem_7.py) | strings
@@ -41,6 +41,7 @@ No | Difficulty | File | Type
 63 | Easy | [problem_63.py](solutions/problem_63.py) | matrix
 65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
 66 | Medium | [problem_66.py](solutions/problem_66.py) | probability
+69 | Easy | [problem_69.py](solutions/problem_69.py) | arrays
 
 ---
 
@@ -352,8 +353,20 @@ You should print out the following:
 
 ### Problem 66
 
+This problem was asked by Square.
+
 Assume you have access to a function toss_biased() which returns 0 or 1 with a probability that's not 50-50 (but also not 0-100 or 100-0). You do not know the bias of the coin.
 
 Write a function to simulate an unbiased coin toss.
 
 ---
+
+### Problem 69
+
+This problem was asked by Facebook.
+
+Given a list of integers, return the largest product that can be made by multiplying any three integers.
+
+For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
+
+You can assume the list has at least three integers.
