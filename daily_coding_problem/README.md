@@ -42,6 +42,7 @@ No | Difficulty | File | Type
 65 | Easy | [problem_65.py](solutions/problem_65.py) | matrix
 66 | Medium | [problem_66.py](solutions/problem_66.py) | probability
 69 | Easy | [problem_69.py](solutions/problem_69.py) | arrays
+70 | Easy | [problem_70.py](solutions/problem_70.py) | integers
 
 ---
 
@@ -370,3 +371,15 @@ Given a list of integers, return the largest product that can be made by multipl
 For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
 
 You can assume the list has at least three integers.
+
+---
+
+### Problem 70
+
+This problem was asked by Microsoft.
+
+A number is considered perfect if its digits sum up to exactly 10.
+
+Given a positive integer n, return the n-th perfect number.
+
+For example, given 1, you should return 19. Given 2, you should return 28.
